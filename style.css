@@ -1,34 +1,129 @@
-#header h1{
+header, footer{
+  display: grid;
+  margin: auto;
+  background-color: #aec6cf;
   text-align: center;
+  min-width: 500px;
+  max-width: 1200px;
+  grid-gap: 20px;
+  margin-top: 45px;
+
+
 }
-  nav.navigation {
-  display: block;
-  margin-bottom: 10px;
-}
-nav.navigation  ul {
-  list-style: none;
-  font-size: 14px;
+h1{
   text-align: center;
-}
-nav.navigation  ul li {
-  display: inline-block;
-}
-nav.navigation  ul li a {
-  display: block;
-  float: left;
-  padding: 3px 6px;
-  color: #575c7d;
-  font-size:22px;
-  text-decoration: none;
+  font-size: 75px;
+  font-family: 'Mukta Mahee', sans-serif;
   font-weight: bold;
 }
-nav.navigation  ul li a:hover {
-  background: #ccc;
-  color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  padding: 3px 6px;
-  margin: 0;
-  text-decoration: none;
+
+.container {
+  min-width: 500px;
+  margin: auto;
+  justify-items: center;
 }
+
+body {
+  background: url(/Users/mike/Test_Blog/background.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  justify-content: center;
+}
+
+.item {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  width: 300px;
+}
+
+.title
+{
+ background-color: #aec6cf;
+ font-family:'Mukta Mahee', sans-serif;
+ text-align: center;
+ font-size: 50px;
+ font-weight: bold;
+ min-width: 500px;
+ max-width: 1200px;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 1200px;
+  grid-template-rows: repeat(6, 450px);
+  grid-gap: 20px;
+  margin-top: 45px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  grid-auto-flow: column;
+  align-content: center;
+  grid-auto-rows: 500px;
+}
+
+.structure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 500px;
+
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+  h3 {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #fff;
+  padding: 10px 0px 10px 10px;
+}
+
+
+  nav.navigation {
+    display: block;
+    margin-bottom: 10px;
+  }
+  nav.navigation  ul {
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+  }
+  nav.navigation  ul li {
+    display: inline-block;
+  }
+  nav.navigation  ul li a {
+    display: block;
+    float: left;
+    padding: 3px 6px;
+    color: #575c7d;
+    font-size:22px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav.navigation  ul li a:hover {
+    background: #ccc;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 3px 6px;
+    margin: 0;
+    text-decoration: none;
